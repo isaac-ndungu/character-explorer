@@ -25,7 +25,8 @@ export function Characters() {
   return (
     
     <div>
-            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto gap-4 p-10'>
+        <h1 className="font-display text-4xl font-bold text-cyan-400 uppercase py-8 px-10">Characters</h1>            
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 max-w-6xl gap-4 px-10'>
                 {data.results.map((character) => (
                     <CharacterCard key={character.id} character={character} />
                     
