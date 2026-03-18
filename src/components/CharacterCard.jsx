@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const statusStyles = {
     Alive: { dot: 'bg-green-400', text: 'text-green-200' },
@@ -30,9 +31,9 @@ function CharacterCard({ character }) {
                         <p className="text-gray-300 text-sm truncate">{character.location?.name}</p>
 
                     </div>
-                    <p className="text-blue-400 text-xs mt-2.5 cursor-pointer hover:text-blue-300 transition-colors text-end pr-4">
+                    <Link to={`/characters/${character.id}/info`} className="text-blue-400 text-xs mt-2.5 cursor-pointer hover:text-blue-300 transition-colors text-end pr-4">
                         View details 
-                    </p>
+                    </Link>
 
                 </div>
             </div>

@@ -19,7 +19,7 @@ export function Characters() {
 
   }, []);
 
-  if (error) return <p>Error: {error}</p>
+  if (error) return <p className='text-red-400 p-6'>Error: {error}</p>
   if (!data) return <p>Loading...</p>
 
   return (
