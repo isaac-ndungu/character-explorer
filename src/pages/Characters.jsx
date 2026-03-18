@@ -25,9 +25,7 @@ export function Characters() {
   return (
     
     <div>
-        <h2>Characters</h2>
-
-            <div>
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto gap-4 p-10'>
                 {data.results.map((character) => (
                     <CharacterCard key={character.id} character={character} />
                     

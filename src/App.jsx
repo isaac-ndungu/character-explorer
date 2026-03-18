@@ -9,7 +9,7 @@ import About from './pages/About';
 function App() {
 
   return (
-    <div className=''>
+    <div className='bg-gray-800 min-h-screen flex'>
       <Router>
         <Sidebar />
           <Routes>
