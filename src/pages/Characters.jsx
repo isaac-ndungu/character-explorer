@@ -1,9 +1,10 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
+import CharacterCard from '../components/CharacterCard';
 
-function Characters() {
+export function Characters() {
     const [data, setData] = useState(null);
-  const [error, setError] = useState(null);
+    const [error, setError] = useState(null);
 
   useEffect(() => {
     fetch('https://rickandmortyapi.com/api/character')
@@ -28,9 +29,11 @@ function Characters() {
 
             <div>
                 {data.results.map((character) => (
-                    <p key={character.id}>{character.name}</p>
+                    <CharacterCard key={character.id} character={character} />
+                    
                 ))
                 }
+                
             </div>
     </div>
   )
