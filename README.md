@@ -1,16 +1,89 @@
-# React + Vite
+# Character Explorer — Rick & Morty
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Character Explorer is a React app for browsing and exploring characters from the Rick and Morty universe. The project is built with React and Tailwind CSS as a component-based single-page application powered by Vite. All data is fetched live from the public Rick and Morty REST API.
 
-Currently, two official plugins are available:
+## Contributor
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Isaac Ndungu
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Project Brief
 
-## Expanding the ESLint configuration
+Character Explorer is a routing-focused React application designed to demonstrate basic routing, dynamic routing, and nested routing using real API data. The app lets users browse all Rick and Morty characters, view individual character details, and explore character-specific info and episode appearances through nested routes.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## Core Features
+
+### Character Browser
+- Grid display of all characters with name, image, status, species, gender, and last known location
+- Each card links directly to the character's detail page
+
+### Character Detail
+- Dynamic route `/characters/:id` displays a single character's image, name, species, and gender
+- Tabbed navigation between Info and Episodes nested routes
+
+### Character Info
+- Displays status, species, gender, origin, location, and type for the selected character
+
+### Character Episodes
+- Fetches and lists every episode the character appeared in
+- Shows episode code, name, and air date
+
+### Sidebar Navigation
+- Fixed sidebar with links to Home, Characters, and About
+- Active route highlighted automatically using NavLink
+
+### Dashboard Home
+- Overview stats — total characters, episodes, locations, and dimensions
+- Quick link cards to the Characters and About pages
+
+### About Page
+- App description, tech stack, and full route map
+
+
+## Technologies Used
+
+- React Router DOM v6
+- Tailwind CSS
+- Vite
+- Rick and Morty API (rickandmortyapi.com)
+- JavaScript (ES6+)
+
+
+## Usage Instructions
+
+1. Clone the repository
+
+```bash
+git@github.com:isaac-ndungu/character-explorer.git
+```
+
+2. Install dependencies
+
+```bash
+npm install
+```
+
+3. Start the development server
+
+```bash
+npm run dev
+```
+
+4. Open your browser and navigate to `http://localhost:5173`
+
+
+
+## Screenshots
+![Screenshot](./src/assets/screenshot1.png)
+![Screenshot](./src/assets/screenshot2.png)
+
+
+
+## Future Improvements
+
+- Search and filter on the characters page
+- Pagination to browse beyond the first 20 characters
+- Loading skeletons instead of plain loading text
+- Filter characters by status, species, or gender
+- Locations page using the `/api/location` endpoint
