@@ -34,11 +34,19 @@ function CharacterDetail() {
 
       <NavLink to='/characters' className='text-gray-500 text-sm hover:text-white mb-6 flex items-center gap-1 transition-colors'>  Back </NavLink>
 
-      <div className='flex items-center gap-6 mb-6'>
-          <img src={character.image} alt={character.name} className='w-24 h-24 rounded-xl object-cover' />
+      <div className='flex gap-6 mb-6'>
+          <img src={character.image} alt={character.name} className='w-auto h-64 rounded-xl object-cover' />
           <div>
-              <h1 className='text-white text-2xl font-semibold'>{character.name}</h1>
-              <p className='text-gray-500 text-sm mt-1'>{character.species} · {character.gender}</p>
+              <h1 className=' text-4xl font-bold text-cyan-400 mb-10'>{character.name}</h1>
+              <div>
+                <div className="flex gap-8 mt-4">
+                  <p className='text-gray-500 text-lg mt-1'>{character.species} </p>
+                  <p className='text-gray-500 text-lg mt-1'>{character.gender}</p>
+                </div>
+                <div className="flex gap-4">
+                  <p className='text-gray-500 text-lg mt-1'>{character.location?.name} </p>
+                </div>
+              </div>
           </div>
       </div>
 

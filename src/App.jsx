@@ -7,6 +7,7 @@ import Characters from './pages/Characters';
 import About from './pages/About';
 import CharacterDetail from './pages/CharacterDetail';
 import CharacterInfo from './pages/characterInfo';
+import CharacterEpisodes from './pages/CharacterEpisodes';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path='/Characters' element={<Characters />} />
           <Route path='/Characters/:id' element={<CharacterDetail />}>
             <Route path='info' element={<CharacterInfo />} />
+            <Route path='episodes' element={<CharacterEpisodes />} />
           </Route>
         </Routes>
 
