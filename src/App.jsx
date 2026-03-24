@@ -6,7 +6,7 @@ import Dashboard from './pages/Dashboard';
 import Characters from './pages/Characters';
 import About from './pages/About';
 import CharacterDetail from './pages/CharacterDetail';
-import CharacterInfo from './pages/characterInfo';
+import CharacterInfo from './pages/CharacterInf';
 import CharacterEpisodes from './pages/CharacterEpisodes';
 
 
